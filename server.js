@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const mysql = require('mysql');
 const axios = require('axios');
@@ -6,8 +5,6 @@ const useragent = require('express-useragent');
 const cors = require('cors'); // Optional: if you need CORS support
 const app = express();
 const port = 3000;
-
-
 
 // Middleware to parse JSON requests
 app.use(express.json());
@@ -60,9 +57,6 @@ app.post('/save-client-data', (req, res) => {
     });
 });
 
-
-
-
 // New endpoint to send user message and return AI response
 app.post('/send-message', async (req, res) => {
     const userMessage = req.body.message;
@@ -76,7 +70,7 @@ app.post('/send-message', async (req, res) => {
     try {
         const response = await axios.post('https://api.cohere.ai/v1/generate', data, {
             headers: {
-                'Authorization': `Bearer ${process.env.COHERE_API_KEY}`,
+                'Authorization': 'Bearer fKsCCngYF0DMZ5m0e8mM0KBfdWBx9ZlTyrBa98ch', // Replace this with your actual API key
                 'Content-Type': 'application/json',
             },
         });
