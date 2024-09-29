@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot with Client Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/clientjs@0.1.11/dist/client.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SIMI-SIMI</h1>
+    </header>
+
+    <!-- Terms and Conditions Prompt -->
+    <div id="terms-prompt" class="terms-prompt">
+        <p>You must agree to the terms and conditions to use this service.</p>
+        <button id="agree-btn">I Agree</button>
+    </div>
+
+    <div id="chat-container" class="chat-container" style="display:none;">
+        <div id="chatbox" class="chatbox"></div>
+
+        <!-- Chat Input Section -->
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SIMI-SIMI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

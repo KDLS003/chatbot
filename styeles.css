@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: 	#121212; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Header */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #1db954;
+    color: #ffffff;
+    padding: 10px;
+}
+
+  /* Hero Section */
+.hero {
+    background-color: #212121; 
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px; 
+    width: 1000px;
+    margin-top: 30px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em; 
+    margin-bottom: 20px;
+    font-weight: 700; 
+    letter-spacing: 1.5px; 
+  }
+  
+  .hero p {
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    line-height: 1.5; 
+    color: #fff; 
+  }
+  
+  .cta-button {
+    background-color: #1db954; 
+    padding: 15px 40px; 
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .cta-button:hover {
+    background-color: #4CAF50; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  /* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #212121; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px;
+    margin-top: 40px; 
+    margin-left: 30px;
+    margin-right: 30px;    
+    margin-bottom: 20px;
+  }
+  
+  .about-us h2 {
+    font-size: 2em; 
+    margin-bottom: 50px;
+    color: #fff; 
+    font-weight: 700;
+    letter-spacing: 1.2px; 
+    text-transform: uppercase; 
+  }
+  
+  /* Team Members Layout */
+  .team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px; /* Add spacing between team members */
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px; 
+    width: 250px; /* Define a width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
+  }
+  
+  /* Team Member Image */
+  .team-member img {
+    border-radius: 50%;
+    width: 180px; /* Larger image size */
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .team-member:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on image hover */
+  }
+  
+  /* Team Member Name */
+  .team-member h3 {
+    font-size: 1.7em; /* Slightly larger and more elegant */
+    margin-top: 15px;
+    color: #333; /* Dark text for clarity */
+    font-weight: 600; /* Semi-bold for a clean and professional look */
+    transition: all 0.4s ease; 
+  }
+
+  .team-member:hover h3 {
+    color: #fff; /* Dark text for clarity */
+  }
+
+  .team-member:hover p {
+    color: #fff; /* Dark text for clarity */
+  }
+  
+  /* Team Member Description */
+  .team-member p {
+    font-size: 1.2em;
+    color: #666; /* Softer gray for a more elegant feel */
+    margin-top: 10px;
+    line-height: 1.4; /* Improved readability */
+    font-style: italic; /* Adds a stylish, refined feel */
+    transition: all 0.4s ease; 
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #000000; /* Dark gray */
+    padding: 15px;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px; /* Slim scrollbar width */
+    height: 8px; /* Same height for horizontal scrollbars */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Dark background for the track */
+    border-radius: 10px; /* Rounded corners for the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #444; /* Dark gray thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 2px solid #2b2b2b; /* Dark border around thumb to create space */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Slightly lighter thumb color on hover */
+  }
+  
+  /* Scrollbar Corner (for when both horizontal and vertical scrollbars appear) */
+  ::-webkit-scrollbar-corner {
+    background-color: #2b2b2b; /* Matches the track background */
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #2b2b2b; /* Dark gray thumb on dark background */
+  }
+  
+  
