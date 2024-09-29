@@ -11,6 +11,12 @@ app.use(express.json());
 app.use(cors()); // Optional: add this if you're making cross-origin requests
 app.use(useragent.express());
 
+// Replace 'https://kdls003.github.io' with your GitHub Pages domain
+app.use(cors({
+    origin: 'https://kdls003.github.io/chatbot',
+    methods: ['GET', 'POST'],
+}));
+
 // MySQL Database connection setup (using XAMPP)
 const db = mysql.createConnection({
     host: 'localhost',
